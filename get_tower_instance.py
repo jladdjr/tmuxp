@@ -41,8 +41,7 @@ def get_tower_hostname(inventory):
 
 
 if __name__ == '__main__':
-    print('https://tower-hostname')
-    """ 
+    #print('https://tower-hostname')
     run = get_latest_matrix_run_for_configuration()
     inventory = get_inventory_file(run)
     hostname = get_tower_hostname(inventory)
@@ -50,5 +49,3 @@ if __name__ == '__main__':
         print('notfound')
     else:
         print(hostname)
-    """
-
