@@ -7,7 +7,7 @@ windows:
   panes:
     - shell_command:
       - clear
-      - py.test --pdb -c config/api.cfg --ansible-user ec2-user --ansible-host-pattern="${TOWERKIT_BASE_URL:8}" --base-url="${TOWERKIT_BASE_URL}" -k "test_confirm_bad_request_on_malformed_file_injectors" tests/api 
+      - py.test --pdb -c config/api.cfg --ansible-user ec2-user --ansible-host-pattern="${TOWERKIT_BASE_URL:8}" --base-url="${TOWERKIT_BASE_URL}" -k "" tests/api 
     - shell_command:
       - clear
       - ssh ec2-user@${TOWERKIT_BASE_URL:8}
